@@ -11,11 +11,11 @@ class _$SubmitSelfServiceSettingsFlowBody
   @override
   final String? csrfToken;
   @override
-  final String method;
+  final String? method;
   @override
-  final String password;
+  final String? password;
   @override
-  final JsonObject traits;
+  final JsonObject? traits;
   @override
   final String? flow;
   @override
@@ -33,22 +33,15 @@ class _$SubmitSelfServiceSettingsFlowBody
 
   _$SubmitSelfServiceSettingsFlowBody._(
       {this.csrfToken,
-      required this.method,
-      required this.password,
-      required this.traits,
+      this.method,
+      this.password,
+      this.traits,
       this.flow,
       this.link,
       this.unlink,
       this.totpCode,
       this.totpUnlink})
-      : super._() {
-    BuiltValueNullFieldError.checkNotNull(
-        method, 'SubmitSelfServiceSettingsFlowBody', 'method');
-    BuiltValueNullFieldError.checkNotNull(
-        password, 'SubmitSelfServiceSettingsFlowBody', 'password');
-    BuiltValueNullFieldError.checkNotNull(
-        traits, 'SubmitSelfServiceSettingsFlowBody', 'traits');
-  }
+      : super._();
 
   @override
   SubmitSelfServiceSettingsFlowBody rebuild(
@@ -190,12 +183,9 @@ class SubmitSelfServiceSettingsFlowBodyBuilder
     final _$result = _$v ??
         new _$SubmitSelfServiceSettingsFlowBody._(
             csrfToken: csrfToken,
-            method: BuiltValueNullFieldError.checkNotNull(
-                method, 'SubmitSelfServiceSettingsFlowBody', 'method'),
-            password: BuiltValueNullFieldError.checkNotNull(
-                password, 'SubmitSelfServiceSettingsFlowBody', 'password'),
-            traits: BuiltValueNullFieldError.checkNotNull(
-                traits, 'SubmitSelfServiceSettingsFlowBody', 'traits'),
+            method: method,
+            password: password,
+            traits: traits,
             flow: flow,
             link: link,
             unlink: unlink,
