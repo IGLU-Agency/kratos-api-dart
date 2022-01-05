@@ -11,13 +11,13 @@ class _$SubmitSelfServiceRegistrationFlowBody
   @override
   final String? csrfToken;
   @override
-  final String method;
+  final String? method;
   @override
   final String password;
   @override
   final JsonObject traits;
   @override
-  final String provider;
+  final String? provider;
 
   factory _$SubmitSelfServiceRegistrationFlowBody(
           [void Function(SubmitSelfServiceRegistrationFlowBodyBuilder)?
@@ -27,19 +27,15 @@ class _$SubmitSelfServiceRegistrationFlowBody
 
   _$SubmitSelfServiceRegistrationFlowBody._(
       {this.csrfToken,
-      required this.method,
+      this.method,
       required this.password,
       required this.traits,
-      required this.provider})
+      this.provider})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(
-        method, 'SubmitSelfServiceRegistrationFlowBody', 'method');
     BuiltValueNullFieldError.checkNotNull(
         password, 'SubmitSelfServiceRegistrationFlowBody', 'password');
     BuiltValueNullFieldError.checkNotNull(
         traits, 'SubmitSelfServiceRegistrationFlowBody', 'traits');
-    BuiltValueNullFieldError.checkNotNull(
-        provider, 'SubmitSelfServiceRegistrationFlowBody', 'provider');
   }
 
   @override
@@ -145,14 +141,12 @@ class SubmitSelfServiceRegistrationFlowBodyBuilder
     final _$result = _$v ??
         new _$SubmitSelfServiceRegistrationFlowBody._(
             csrfToken: csrfToken,
-            method: BuiltValueNullFieldError.checkNotNull(
-                method, 'SubmitSelfServiceRegistrationFlowBody', 'method'),
+            method: method,
             password: BuiltValueNullFieldError.checkNotNull(
                 password, 'SubmitSelfServiceRegistrationFlowBody', 'password'),
             traits: BuiltValueNullFieldError.checkNotNull(
                 traits, 'SubmitSelfServiceRegistrationFlowBody', 'traits'),
-            provider: BuiltValueNullFieldError.checkNotNull(
-                provider, 'SubmitSelfServiceRegistrationFlowBody', 'provider'));
+            provider: provider);
     replace(_$result);
     return _$result;
   }
