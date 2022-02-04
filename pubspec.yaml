@@ -1,7 +1,7 @@
 name: kratos_api_dart
 version: 1.0.0
 description: Ory Kratos Dart API client
-homepage: homepage
+homepage: https://github.com/IGLU-Agency/kratos-api-dart
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
